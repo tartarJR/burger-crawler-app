@@ -10,13 +10,18 @@
 
       <div class="row">
 
-        <div v-for="(venue, i) in venues" :key="i" class="col mt-4 mb-4">
+        <div v-for="(venue, i) in venues" :key="i" class="col-lg-4 mt-2 mb-2">
 
           <div class="card" style="width: 18rem;">
             <div class="card-header">
               <h5>{{ venue.venueName }}</h5>
             </div>
             <img class="card-img-top" :src="venue.latestBurgerPhotoUrl">
+            <div class="card-body">
+              <p>
+                Latest burger photo of the burger venue
+              </p>
+            </div>
           </div>
     
         </div>
